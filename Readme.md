@@ -1,4 +1,6 @@
-# Web App Project
+# Web UAS
+Nama : Solafide Zamili
+NIM : 121140201
 
 ## Deskripsi
 Aplikasi web ini adalah sistem sederhana dengan fitur:
