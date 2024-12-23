@@ -18,8 +18,8 @@ Aplikasi web ini adalah sistem sederhana dengan fitur:
   - `routes.php`: Logika routing URL aplikasi.
 - `database/`: File terkait database.
   - `migration.sql`: Script SQL untuk membuat tabel.
-- `storage/`: Data sementara untuk session dan cookie.
-- `.env`: File konfigurasi koneksi database.
+<!-- - `storage/`: Data sementara untuk session dan cookie.
+- `.env`: File konfigurasi koneksi database. -->
 - `README.md`: Dokumentasi proyek.
 
 ## Teknologi
