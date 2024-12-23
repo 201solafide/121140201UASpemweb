@@ -38,3 +38,17 @@ Aplikasi web ini adalah sistem sederhana dengan fitur:
 4. **Akses Aplikasi**:
    - Buka browser dan akses `http://localhost/web-app/public/index.php`.
 
+## Hosting Aplikasi Web
+1. **Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?**:
+    - Membuat repository di Github untuk aplikasi web
+    - Memastikan bahwa repository memiliki file utama untuk dijalankan
+    - Mengupload semua file yang diperlukan
+    - Mengaktifkan fitur Github Pages, di tab **Settings** repository, memilih branch, pada bagian source menentukan bagian folder yang dipilih **/ (root) **
+    - Github memberikan URL publik yang dapat diakses untuk situs web tersebut
+2. **Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web anda**:
+    - Github Pages merupakan penyedia hosting yang cocok dan mudah dan sepenuhnya terintegrasi dengan github sehingga modifikasi kode dapat lebih cepat, akan tetapi untuk project yang lebih besar dapat menggunakan penyedia hosting lain.
+3. **Bagaimana anda memastikan keamanan aplikasi web yang anda host? **:
+    - Github Pages sendiri menyediakan HTTPS secara otomatis untk semua situs web yang dihosting
+    - Pemeliharaan kode dnegan memastikan pengguna memberikan input dan divalidasi dengan benar
+4. **Jelaskan konfigurasi server yang anda terapkan untuk mendukung aplikasi anda**:
+    - Lingkugan hosting Github Pages, sudah menyediakan lingkungan server yang otomatis menangani hosting, sehingga tidak perlu mengonfigurasi server fisika atau virtual
