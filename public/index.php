@@ -1,3 +1,43 @@
+<?php
+// Menampilkan daftar pengguna yang telah mendaftar ke dalam tabel HTML.
+
+require_once '../app/controllers/UserController.php';
+
+$userController = new UserController();
+$users = $userController->getUsers();
+?>
+
+<div class="user-table">
+    <h2>Registered Users</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Registered At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (!empty($users)): ?>
+                <?php foreach ($users as $user): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($user['id']) ?></td>
+                        <td><?= htmlspecialchars($user['username']) ?></td>
+                        <td><?= htmlspecialchars($user['email']) ?></td>
+                        <td><?= htmlspecialchars($user['created_at']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="4">No users registered yet.</td>
+                </tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
+</div>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -29,24 +29,24 @@ signUpForm.addEventListener('submit', function (e) {
     else if (password.length < 6) {
         error = 'Password must be at least 6 characters long.';
     }
-    // Validate confirm password
+    // Validasi password sesuai
     else if (password !== confirmPassword) {
         error = 'Passwords do not match.';
     }
 
-    // Display error message if any
+    // error 
     if (error) {
         errorMessage.textContent = error;
         errorMessage.style.display = 'block';
         return;
     }
 
-    // No errors, submit the form
+    // kondisi tidak ada error
     errorMessage.style.display = 'none';
     signUpForm.submit(); // Submit to server
 });
 
-// Helper function to validate email
+// validasi @ gmail
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
